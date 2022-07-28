@@ -1,0 +1,23 @@
+sort1 uses: Bubble sort
+
+How do you know?: Bubble sort should be faster than selection sort in sorted scenario
+
+Sorted 1.7s 1.3s 2.2s
+Random 8.6s 9.3s 8.9s
+Reverse 6.9s 6.6s 7s
+
+sort2 uses: Merge sort
+
+How do you know?: Merge sort should be the fastest in random and reverse scenarios
+
+Sorted 2s 1s 2.2s
+Random 0.8s 2.8s 1.6s
+Reverse 2.8s 2.7s 2.3s
+
+sort3 uses: Selection sort
+
+How do you know?: Selection sort should be the slowest in both sorted and reverse scenarios
+
+Sorted 5.9s 4s 4.4s
+Random 5s 4.2s 5.1s
+Reverse 4.7s 4.6s 4.8s

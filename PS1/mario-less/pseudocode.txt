@@ -1,0 +1,3 @@
+Require to input a number
+If >0 and <than 9 then
+Loop for writing #
