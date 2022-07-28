@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function rAnsw(id){
+                btn = document.getElementById(id)
+                btn.style = "background-color:green"
+                let response = document.getElementById("response")
+                response.innerHTML = "Correct"
+            }
+            function wAnsw(id){
+                btn = document.getElementById(id)
+                btn.style = "background-color:red"
+                let response = document.getElementById("response")
+                response.innerHTML = "Incorrect"
+            }
+            function check(id){
+                btn = document.getElementById(id)
+                let input = document.querySelector('input')
+                if (input.value == 'Liked it'){
+                    input.style = 'background-color:green'
+                    let response2 = document.getElementById("response2")
+                    response2.innerHTML = "Correct"
+                }
+                else {
+                    input.style = 'background-color:red'
+                    let response2 = document.getElementById("response2")
+                    response2.innerHTML = "Incorrect"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Favourite artist in Positivus first day?</h3>
+                    <button id = "btn1" onclick="rAnsw(id)"> Caribou</button>
+                    <button id="btn2" onclick="wAnsw(id)"> Jamie XX</button>
+                    <button id="btn3" onclick="wAnsw(id)"> Buu</button>
+                    <p id = "response"></p>
+            </div>
+
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Why?</h3>
+                    <input type= "text"></input>
+                    <button id="confirm" onclick="check()">Confirm</button>
+                    <p id = "response2"></p>
+            </div>
+        </div>
+    </body>
+</html>
