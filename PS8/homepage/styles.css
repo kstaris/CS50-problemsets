@@ -30,7 +30,7 @@ a:hover {
     color: #2f3735 !important;
 }
 .txtArea{
-    background-color: rgba(255,255,255,.4);;
+    background-color: rgba(255,255,255,.4);
     margin: auto;
     width:75%;
     border-radius: 10px;
@@ -57,3 +57,33 @@ a:hover {
     width: 50%;
     margin-left: 50%;
 }
+.collapsible {
+    background-color: rgba(255,255,255,0);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 25px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: rgba(204,204,204,0.4);
+
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: rgba(241,241,241,0.4);
+  }
+  .btn-primary{
+    background-color: #b9845d;
+    border-color: #b9845d;
+    margin-top: 5px;
+    /*font-size: 30px;*/
+  }
