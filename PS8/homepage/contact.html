@@ -30,19 +30,24 @@
               </script>
         </header>
         <main>
-            <form method="POST" class="contact-form">
-                <label for="name">Name</label><br />
-                <input class="name" type="text" placeholder="name" /><br />
-                <label for="email">Email</label><br />
-                <input class="email" type="email" placeholder="email" /><br />
-                <label for="message">Message</label><br />
-                <textarea class="message" name="" id="message" cols="30" rows="10" placeholder="message">
-                </textarea>
-                <br />
-                <button type="submit">Submit</button>
-            </form>
+          <div class = "txtArea">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="InputEmail1">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label class="form-check-label" for="exampleCheck1">Enter message</label>
+              <input type="text" class="form-control" id="emailText">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
             <p id = 'thanks'>
-              Thank you for your interest!
+              Thank you for your interest, but unfortunately I haven't jet made it possible to send emails.🥺
             </p>
             <script>
               document.querySelector('button').addEventListener('click', function(e){
@@ -51,6 +56,7 @@
                 e.preventDefault()
               })
             </script>
+            </main>
         </main>
     </body>
 </html>
